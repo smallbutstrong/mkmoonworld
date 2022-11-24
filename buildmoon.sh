@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ -f ZeroTierOne ] ; then
+if [ ! -d "ZeroTierOne" ] ; then
   git clone https://github.com/zerotier/ZeroTierOne
   ## cd ZeroTierOne && git checkout e0acccc3c918b59678033e585b31eb000c68fdf2
 fi
